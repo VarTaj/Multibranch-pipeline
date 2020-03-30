@@ -1,5 +1,9 @@
 pipeline {
-    agent MB_agent
+    agent {
+        node{
+            label 'MB_agent'
+        }
+    }
     stages {
         stage('---clean---') {
             steps {
