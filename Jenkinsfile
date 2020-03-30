@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent MB_agent
     stages {
         stage('---clean---') {
             steps {
