@@ -1,8 +1,4 @@
 pipeline {
-    
-   triggers {
-    pollSCM(' ') // Enabling being build on Push
-  }
     agent {
         node{
             label 'MB_agent'
@@ -24,5 +20,8 @@ pipeline {
                 sh "mvn package"
             }
         }
+        triggers {
+    pollSCM('*****') // Enabling being build on Push
+  }
     }
 }
