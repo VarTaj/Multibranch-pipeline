@@ -20,8 +20,5 @@ pipeline {
                 sh "mvn package"
             }
         }
-        triggers {
-    pollSCM('*****') // Enabling being build on Push
-  }
     }
 }
